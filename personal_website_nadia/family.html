@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Family: Nadia's website</title>
+	<link rel="stylesheet" href="css/styleone.css">
+	<link rel="stylesheet" href="css/stylethree.css">
+
+	<style>
+
+		ul  
+		{
+			list-style-type: none;
+			margin-left: auto;
+			margin-right: auto;
+			overflow: hidden;
+			padding: 30px, 30px;
+			height: 5%;
+			width: 90%;
+			text-align: center;
+			font-family: Tahoma;
+			background-color: purple;	
+		}
+
+		li a 
+		{
+			float: left;
+			height: ;
+			display: ruby-base-container;
+			padding: 30px;
+			text-decoration: none;
+			color: ivory;
+			text-align: center;
+		}
+
+		li a:hover
+		{
+			background-color: paleturquoise;
+		}
+
+		body
+		{
+			background-image: url(pictures/background_four.png);
+		}
+
+		table, th, tr, td
+		{
+			border: 3px solid darkgrey;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		th, td
+		{
+			padding: 10px;
+		}		
+		th 
+		{
+			background-color: mediumorchid ;
+			border: 3px solid darkgrey;
+		}
+		tr:nth-child(odd)
+		{
+			background-color: palevioletred;
+		}
+		tr:nth-child(even)
+		{
+			background-color: orchid;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<center>
+		<h1>My Family</h1>
+	</center>
+
+	<center>
+   		<b><div id="clock">5:28:20</div></b>
+	</center>
+  
+    <script> 
+        setInterval(showTime, 1000); 
+        function showTime()
+        	{ 
+	            let time = new Date(); 
+	            let hour = time.getHours(); 
+	            let min = time.getMinutes(); 
+	            let sec = time.getSeconds(); 
+	            am_pm = "AM"; 
+	  
+	            if (hour > 12) { 
+	                hour -= 12; 
+	                am_pm = "PM"; 
+	            } 
+	            if (hour == 0) { 
+	                hr = 12; 
+	                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+    </script>
+
+	<ul>
+		<li><a href="index.html" target="blank">Home</a></li>
+		<li><a href="biodata.html" target="blank">About Me</a></li>
+		<li><a href="experiences.html" target="blank">Experiences</a></li>
+		<li><a href="education.html" target="blank">Education</a></li>
+		<li><a href="family.html" target="blank">Family</a></li>
+		<li><a href="gallery.html" target="blank">Gallery</a></li>
+	</ul> <br>
+
+	<center><audio controls autoplay>
+		<source src="audio/Endless Love.mp3" type="audio/mp3">
+	</audio></center>
+
+		<h2>My Parents</h2>
+
+	<center>
+		<img src="pictures/my_parents.jpg" alt="Movie Night" style="width: 450px; height: 250px;">
+		</center>
+
+	<table style="width: 100%">
+		<caption>My Father</caption>
+		<tr>
+			<th style="width: 20%">Name</th>
+			<th style="width: 30%">Image</th>
+			<th style="width: 10%">Relation</th>
+			<th style="width: 20%">Age</th>
+			<th style="width: 10%">Status</th>
+			<th style="width: 10%">Occupation</th>
+		</tr>
+		<tr>
+			<td>Ali Zaini Bin Jaafar</td>
+			<td><center><img src="pictures/ayah.jpg" style="height: 100%; width: 30%;"></center></td>
+			<td>Father</td>
+			<td>59 years old</td>
+			<td>Working</td>
+			<td>Police</td>
+		</tr>
+	</table> <br>
+
+	<table style="width: 100%">
+		<caption>My Mother</caption>
+		<tr>
+			<th style="width: 20%">Name</th>
+			<th style="width: 30%">Image</th>
+			<th style="width: 10%">Relation</th>
+			<th style="width: 20%">Age</th>
+			<th style="width: 10%">Status</th>
+			<th style="width: 10%">Occupation</th>
+		</tr>
+		<tr>
+			<td>Nornita Binti Mokhtaruddin</td>
+			<td><center><img src="pictures/ibu.jpg" style="height: 100%; width: 30%;"></center></td>
+			<td>Mother</td>
+			<td>47 years old</td>
+			<td>Working</td>
+			<td>Nurse</td>
+		</tr>
+	</table> <br>
+
+	<h2>My Siblings</h2>
+
+	<center>
+		<img src="pictures/my_siblings.jpg" alt="Movie Night" style="width: 450px; height: 250px;">
+		</center>
+
+	<table style="width: 100%">
+		<caption>My Siblings</caption>
+		<tr>
+			<th style="width: 20%">Name</th>
+			<th style="width: 30%">Image</th>
+			<th style="width: 10%">Relation</th>
+			<th style="width: 20%">Age</th>
+			<th style="width: 10%">Status</th>
+			<th style="width: 10%">Education</th>
+
+		</tr>
+		<tr>
+			<td>Farah Adura Binti Ali Zaini</td>
+			<td><center><img src="pictures/kakak.jpg" style="height: 100%; width: 30%;"></center></td>
+			<td>Older sister (1<sup>st</sup>)</td>
+			<td>22 years old</td>
+			<td>Student</td>
+			<td>UiTM Shah Alam (Degree)</td>
+		</tr>
+			<td>Anis Zulaika Binti Ali Zaini</td>
+			<td><center><img src="pictures/anis.jpg" style="height: 100%; width: 30%;"></center></td>
+			<td>Younger sister (3<sup>rd</sup>)</td>
+			<td>20 years old</td>
+			<td>Student</td>
+			<td>UiTM Tapah (Diploma)</td>
+		</tr>
+			<td>Marissa Balqish Binti Ali Zaini</td>
+			<td><center><img src="pictures/kakcha.jpg" style="height: 100%; width: 30%;"></center></td>
+			<td>Younger sister (4<sup>th</sup>)</td>
+			<td>15 years old</td>
+			<td>Student</td>
+			<td>SMK Assunta</td>
+		</tr>
+			<td>Adam Rizqi Bin Ali Zaini</td>
+			<td><center><img src="pictures/adam.jpg" style="height: 100%; width: 30%;"></center></td>
+			<td>Youngest brother (5<sup>th</sup>)</td>
+			<td>12 years old</td>
+			<td>Student</td>
+			<td>SK La Salle</td>
+		</tr>
+	</table>
+
+	<center>
+	<footer>
+		<p style="background-color: #bb33ff; color: black; font-family: Times New Roman; font-size: 30px; height: 500px ihsb8"> &copy; <em id="date"></em>NADIA QISTINA. COPYRIGHT</p>
+	</footer>
+	</center>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+body
+
+h1
+{
+	color: black;
+	background-color: darkorange;
+	border: 5px dashed gold;
+	text-align: center;
+	width: 30%;
+	height: 50px;
+	padding: 20px;
+}
+
+h2
+{
+	color: brown;
+	font-family: courier new, monospace;
+	text-align: center;
+	font-style: bold,;
+}
+
+p
+{
+	text-align: center;
+	font-style: italic;
+}
+
+

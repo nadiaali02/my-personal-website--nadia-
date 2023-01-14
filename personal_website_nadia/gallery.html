@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery: Nadia's website</title>
+	<link rel="stylesheet" href="css/styleone.css">
+	<link rel="stylesheet" href="css/stylethree.css">
+
+	<style>
+		img
+			{
+				border: 5px solid fuchsia;
+			}
+	</style>
+
+</head>
+<body>
+
+	<style>
+
+		ul  
+		{
+			list-style-type: none;
+			margin-left: auto;
+			margin-right: auto;
+			overflow: hidden;
+			padding: 30px, 30px;
+			height: 5%;
+			width: 90%;
+			text-align: center;
+			font-family: Tahoma;
+			background-color: purple;
+		}
+
+		li a 
+		{
+			float: left;
+			height: ;
+			display: ruby-base-container;
+			padding: 30px;
+			text-decoration: none;
+			color: ivory;
+			text-align: center;
+		}
+
+		li a:hover
+		{
+			background-color: paleturquoise;
+		}
+
+		body
+		{
+			background-image: url(pictures/background_five.png);
+		}
+
+	</style>
+
+	<center>
+		<h1>My Gallery</h1>
+	</center>
+
+	<center>
+   		<b><div id="clock">5:28:20</div></b>
+	</center>
+  
+    <script> 
+        setInterval(showTime, 1000); 
+        function showTime()
+        	{ 
+	            let time = new Date(); 
+	            let hour = time.getHours(); 
+	            let min = time.getMinutes(); 
+	            let sec = time.getSeconds(); 
+	            am_pm = "AM"; 
+	  
+	            if (hour > 12) { 
+	                hour -= 12; 
+	                am_pm = "PM"; 
+	            } 
+	            if (hour == 0) { 
+	                hr = 12; 
+	                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+    </script>
+
+	<ul>
+		<li><a href="index.html" target="blank">Home</a></li>
+		<li><a href="biodata.html" target="blank">About Me</a></li>
+		<li><a href="experiences.html" target="blank">Experiences</a></li>
+		<li><a href="education.html" target="blank">Education</a></li>
+		<li><a href="family.html" target="blank">Family</a></li>
+		<li><a href="gallery.html" target="blank">Gallery</a></li>
+	</ul> 
+
+	<center><audio controls autoplay>
+		<source src="audio/Goodbye Day.mp3" type="audio/mp3">
+	</audio></center>
+
+	<h2>This is Me</h2>
+		<center>
+		<img src="pictures/movie_night.jpg" alt="Movie Night" style="width: 250px; height: 400px;">
+		<img src="pictures/gambar_raya2022.jpg" alt="Raya 2022" style="width: 250px; height: 400px;">
+		<img src="pictures/nadia_rejang_beuh.jpg" alt="Sem 2 Kor: Tarian Rejang Be'uh" style="width: 250px; height: 400px;">
+		<img src="pictures/nadia_student_centre.jpg" alt="At Student Centre" style="width: 250px; height: 400px;">
+		<img src="pictures/nadia_uitm.jpg" alt="At UiTM Signage" style="width: 250px; height: 400px;">
+	</center>
+
+	<h2>Friends</h2>
+		<center>
+		<img src="pictures/school_groupmates.jpg" alt="School Bestie" style="width: 415px; height: 250px;">
+		<img src="pictures/cps_classmates.jpg" alt="Class Photoshot" style="width: 415px; height: 250px;">
+		<img src="pictures/aaf_classmates.jpg" alt="AAF23" style="width: 415px; height: 250px;">
+	</center>
+
+	<center>
+	<footer>
+		<p style="background-color: #bb33ff; color: black; font-family: Times New Roman; font-size: 30px; height: 500px ihsb8"> &copy; <em id="date"></em>NADIA QISTINA. COPYRIGHT</p>
+	</footer>
+	</center>
+	
+</body>
+</html>

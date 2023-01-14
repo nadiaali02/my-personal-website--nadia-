@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Biodata: Nadia's website</title>
+	<link rel="stylesheet" href="css/styleone.css">
+	<link rel="stylesheet" href="css/stylethree.css">
+	
+	<style>
+
+		body
+		{
+			background-image: url(pictures/background_one.png);
+		}
+
+		table, th, tr, td
+		{
+			border: 4px solid bisque;
+			border-collapse: collapse;
+			text-align: center;
+
+		}
+		th, td
+		{
+			padding: 20px;
+			height: 10px;
+			background-color: darkviolet;
+
+		}
+		tr:hover
+		{
+			color: lightgoldenrodyellow;
+		}	
+		
+		div
+		ul  
+		{
+			list-style-type: none;
+			margin-left: auto;
+			margin-right: auto;
+			overflow: hidden;
+			padding: 30px, 30px;
+			height: 5%;
+			width: 90%;
+			text-align: center;
+			font-family: Tahoma;
+			background-color: purple;
+		}
+
+		li a 
+		{
+			float: left;
+			display: ruby-base-container;
+			padding: 30px;
+			text-decoration: none;
+			color: ivory;
+			text-align: center;
+		}
+
+		li a:hover
+		{
+			background-color: paleturquoise;
+		}
+		/div
+
+	</style>
+	
+</head>
+<body>
+
+	<center>
+		<h1>About Me</h1>
+	</center>
+
+	<center>
+   		<b><div id="clock">5:28:20</div></b>
+	</center>
+  
+    <script> 
+        setInterval(showTime, 1000); 
+        function showTime()
+        	{ 
+	            let time = new Date(); 
+	            let hour = time.getHours(); 
+	            let min = time.getMinutes(); 
+	            let sec = time.getSeconds(); 
+	            am_pm = "AM"; 
+	  
+	            if (hour > 12) { 
+	                hour -= 12; 
+	                am_pm = "PM"; 
+	            } 
+	            if (hour == 0) { 
+	                hr = 12; 
+	                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+    </script>
+
+	<div>
+	<ul type="none" >
+		<li style><a href="index.html" target="blank">Home</a></li>
+		<li><a href="biodata.html" target="blank">About Me</a></li>
+		<li><a href="experiences.html" target="blank">Experiences</a></li>
+		<li><a href="education.html" target="blank">Education</a></li>
+		<li><a href="family.html" target="blank">Family</a></li>
+		<li><a href="gallery.html" target="blank">Gallery</a></li>
+	</ul>
+	</div>
+	<br>
+
+	<center> <br>
+
+	<center><audio controls autoplay>
+		<source src="audio/Face Instrumental.mp3" type="audio/mp3">
+	</audio></center> <br>
+
+	<center><table style="width: 60%">
+		<caption><b>Personal Information</b></caption>
+		<tr>
+			<th>No.</th>
+			<th>Type of Information</th>
+			<th>Detail</th>
+		</tr>
+		<tr>
+			<td>1.</td>
+			<td>Name</td>
+			<td>Nadia Qistina Binti Ali Zaini</td>
+		</tr>
+		<tr>
+			<td>2.</td>
+			<td>Gender</td>
+			<td>Female</td>
+		</tr>
+		<tr>
+			<td>3.</td>
+			<td>Age</td>
+			<td>21 years old</td>
+		</tr>
+		<tr>
+			<td>4.</td>
+			<td>Date of Birth</td>
+			<td>5th August 2002</td>
+		</tr>
+		<tr>
+			<td>5.</td>
+			<td>Marital status</td>
+			<td>Single</td>
+		<tr>
+			<td>6.</td>
+			<td>Nationality</td>
+			<td>Malaysian</td>
+		</tr>
+		<tr>
+			<td>7.</td>
+			<td>Religion</td>
+			<td>Islam</td>
+		</tr>
+		<tr>
+			<td>8.</td>
+			<td>Place of Birth/ Origin</td>
+			<td>Petaling Jaya, Selangor</td>
+		</tr>
+	</table></center>
+	<br>
+
+	<h3>Lists of my favourite things:</h3>
+
+	<ol style="text-align: left;">
+		<li>Drinks</li>
+		<ul type="square">
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Chocolate</li>
+		</ul> <br>
+
+		<li>Foods</li>
+		<ul type="square">
+			<li>My mom's cooking</li>
+			<li>Pizza</li>
+			<li>Chicken Burger</li>
+		</ul> <br>
+
+		<li>Fruits</li>
+		<ul type="square">
+			<li>Honeydew</li>
+			<li>Watermelon</li>
+			<li>Pear</li>
+		</ul> <br>
+
+		<li>Colors</li>
+		<ul type="square">
+			<li>Purple</li>
+			<li>Green/Turquoise</li>
+			<li>Blue</li>
+		</ul> <br>
+
+		<li>Hobby</li>
+		<ul type="square">
+			<li>Reading (news,facts, novel, memes)</li>
+			<li>Listening to Music</li>
+			<li>Singing</li>
+			<li>Badminton</li>
+			<li>Watching korean dramas</li>
+		</ul>
+	</ol>
+
+	<center>
+	<footer>
+		<p style="background-color: #bb33ff; color: black; font-family: Times New Roman; font-size: 30px; height: 500px ihsb8"> &copy; <em id="date"></em>NADIA QISTINA. COPYRIGHT</p>
+	</footer>
+	</center>
+  
+
+
+</body>
+</html>

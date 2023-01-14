@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Education: Nadia's website</title>
+	<link rel="stylesheet" href="css/styleone.css">
+	<link rel="stylesheet" href="css/stylethree.css">
+
+	<style>
+
+		ul  
+		{
+			list-style-type: none;
+			margin-left: auto;
+			margin-right: auto;
+			overflow: hidden;
+			padding: 30px, 30px;
+			height: 5%;
+			width: 90%;
+			text-align: center;
+			font-family: Tahoma;
+			background-color: purple;
+		}
+
+		li a 
+		{
+			float: left;
+			height: ;
+			display: ruby-base-container;
+			padding: 30px;
+			text-decoration: none;
+			color: ivory;
+			text-align: center;
+		}
+
+		li a:hover
+		{
+			background-color: paleturquoise;
+		}
+
+		body
+		{
+			background-image: url(pictures/background_three.png);
+		}
+
+		table, th, tr, td
+		{
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+		th, td
+		{
+			padding: 1px;
+
+		}		
+		th 
+		{
+			background-color: mediumpurple;
+			color: white;
+		}
+		td:nth-child(even)
+		{
+			background-color: lightpink;
+
+		}	
+
+		td:nth-child(odd)
+		{
+			background-color: peachpuff;
+
+		}	
+
+
+		</style>	
+
+</head>
+<body>
+
+	<center>
+		<h1>My Education Details</h1>
+	</center>
+
+	<center>
+   		<b><div id="clock">5:28:20</div></b>
+	</center>
+  
+    <script> 
+        setInterval(showTime, 1000); 
+        function showTime()
+        	{ 
+	            let time = new Date(); 
+	            let hour = time.getHours(); 
+	            let min = time.getMinutes(); 
+	            let sec = time.getSeconds(); 
+	            am_pm = "AM"; 
+	  
+	            if (hour > 12) { 
+	                hour -= 12; 
+	                am_pm = "PM"; 
+	            } 
+	            if (hour == 0) { 
+	                hr = 12; 
+	                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+    </script>
+
+	<ul>
+		<li><a href="index.html" target="blank">Home</a></li>
+		<li><a href="biodata.html" target="blank">About Me</a></li>
+		<li><a href="experiences.html" target="blank">Experiences</a></li>
+		<li><a href="education.html" target="blank">Education</a></li>
+		<li><a href="family.html" target="blank">Family</a></li>
+		<li><a href="gallery.html" target="blank">Gallery</a></li>
+	</ul>
+
+	<center>
+	<img src="pictures/nadia_edu_grad.jpg" alt="School Bestie" style="width: 415px; height: 250px;">
+	</center> <br>
+
+	<center><audio controls autoplay>
+		<source src="audio/Bad Habits Instrumental.mp3" type="audio/mp3">
+	</audio></center>
+	<br>
+
+	<table style="width: 100%">
+		<caption>List of schools and achievements</caption>
+		<tr>
+			<th colspan="2">Level</th>
+			<th>Name of school</th>
+			<th>Achievement</th>
+		</tr>
+		<tr>
+			<td>Kindergarten</td>
+			<td>2007 - 2008 (5 - 6 years old)</td>
+			<td>Smart Reader Kids</td>
+			<td style="text-align: center;">-</td>
+		</tr>
+		<tr>
+			<td>Primary</td>
+			<td>2009 - 2014 (Standard 1 - 6)</td>
+			<td>SJK (C) Chen Moh</td>
+			<td>UPSR: 3A, 2B, 2C</td>
+		</tr>
+		<tr>
+			<td>Secondary</td>
+			<td>2015 - 2019 (Form 1 - 5)</td>
+			<td>SMK Assunta</td>
+			<td>SPM: 5A, 3B, 1C</td>
+		</tr>
+		<tr>
+			<td>Tertiary</td>
+			<td>2020 - 2023 (Semester 1 - 5)</td>
+			<td>UiTM Cawangan Kelantan, Kampus Machang</td>
+			<td>CGPA: 3.78 (semester 1-4)</td>
+		</tr>
+	</table>
+
+	<h2>My Education Journey</h2>
+
+	<center>
+	<a href="https://smartreader.edu.my/"><img src="icons and logo/smartreaderkids.png" alt="Kindergarten Icon" style="width: 250px; height: 150px;"></a>
+	</center>
+
+	<p style="text-align: justify;">My first official education begin back in 2007 which is when I was 5 years old whereby I was sent to the kindergarten called Smart Reader Kids. In this kindergarten, I was taught about the most basic subject and education such as basic knowledge on the English, Bahasa Malaysia and Mandarin language, Mathematics and Arts.</p> <br>
+
+	<center>
+	<a href="https://ms.wikipedia.org/wiki/Sekolah_Jenis_Kebangsaan_(C)_Chen_Moh"><img src="icons and logo/sjkcchenmoh.png" alt="Primary Education Icon" style="width: 150px; height: 120px;"></a>
+	</center>
+
+	<p style="text-align: justify;">Later on,I get primary education at SJK (C) Chen Moh whereby my parents had sent me, my older sister and one of my younger sister to the same school. During the first 2 years in this school, I was diagnosed with severe stress by a pediatrician who suggested that I transfer to a national school (Sekolah Kebangsaan). However, after having a slow talk and discussion with my family especially my parents as well as the teachers, me and my parents had decided that I stay in the school. After working hard to get through the challenging 6 years of primary school session with the helps of my teachers, friends and family, I manage to graduate and get good result for my <abbr title="Ujian Penilaian Sekolah Rendah">UPSR</abbr> examination and pass every subjects.</p> <br>
+
+	<center>
+	<a href="https://smkassunta.edu.my/"><img src="icons and logo/smkassunta.png" alt="Secondary Education Icon" style="width: 150px; height: 130px;"></a>
+	</center>
+
+	<p style="text-align: justify;">After graduating from primary school, I went to the all girls high school SMK Assunta located at Jalan Changgai whereby I studied for 5 years and I have taken <abbr title="Pentaksiran Tingkatan 3">PT3</abbr> and <abbr title="Sijil Pelajaran Malaysia">SPM</abbr> examination. After my PT3, I got into the arts stream whereby I have take 9 subjects which include six core subjects namely Bahasa Melayu, English, Mathematics, Science, Sejarah and Pendidikan Islam. Another 3 subjects is the elective subjects such as Kesusasteraan Melayu, Perniagaan and Pendidikan Seni Visual.</p> <br>
+
+	<center>
+	<a href="https://kelantan.uitm.edu.my/index.php/en/"><img src="icons and logo/uitm.png" alt="Tertiary Education Icon" style="width: 170px; height: 130px;"></a>
+	</center>
+
+
+	<p style="text-align: justify"> Now, I am continuing my tertiary education at <abbr title="Universiti Teknologi Mara">UiTM</abbr> Cawangan Kelantan, Kampus Machang, whereby I am continuing my studies in the Information Management (IM110) field and have been in the final semester which is the fifth semester of diploma.
+
+	<center>
+	<footer>
+		<p style="background-color: #bb33ff; color: black; font-family: Times New Roman; font-size: 30px; height: 500px ihsb8"> &copy; <em id="date"></em>NADIA QISTINA. COPYRIGHT</p>
+	</footer>
+	</center>
+
+
+</body>
+</html>

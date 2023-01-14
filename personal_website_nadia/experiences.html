@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Experiences: Nadia's website</title>
+	<link rel="stylesheet" href="css/styleone.css">
+	<link rel="stylesheet" href="css/styletwo.css">
+	<link rel="stylesheet" href="css/stylethree.css">
+
+	<style>
+
+		ul  
+		{
+			list-style-type: none;
+			margin-left: auto;
+			margin-right: auto;
+			overflow: hidden;
+			padding: 30px, 30px;
+			height: 5%;
+			width: 90%;
+			text-align: center;
+			font-family: Tahoma;
+			background-color: purple;	
+		}
+
+		li a 
+		{
+			float: left;
+			height: ;
+			display: ruby-base-container;
+			padding: 30px;
+			text-decoration: none;
+			color: ivory;
+			text-align: center;
+		}
+
+		li a:hover
+		{
+			background-color: paleturquoise;
+		}
+
+		body
+		{
+			background-image: url(pictures/background_two.png);
+		}
+
+		img
+		{
+			border: 10px solid blueviolet;
+		}
+
+	</style>
+</head>
+<body>
+
+	<center>
+		<h1>My Experiences</h1>
+	</center>
+
+	<center>
+   		<b><div id="clock">5:28:20</div></b>
+	</center>
+  
+    <script> 
+        setInterval(showTime, 1000); 
+        function showTime()
+        	{ 
+	            let time = new Date(); 
+	            let hour = time.getHours(); 
+	            let min = time.getMinutes(); 
+	            let sec = time.getSeconds(); 
+	            am_pm = "AM"; 
+	  
+	            if (hour > 12) { 
+	                hour -= 12; 
+	                am_pm = "PM"; 
+	            } 
+	            if (hour == 0) { 
+	                hr = 12; 
+	                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+    </script>
+
+	<center>
+	<ul>
+		<li><a href="index.html" target="blank">Home</a></li>
+		<li><a href="biodata.html" target="blank">About Me</a></li>
+		<li><a href="experiences.html" target="blank">Experiences</a></li>
+		<li><a href="education.html" target="blank">Education</a></li>
+		<li><a href="family.html" target="blank">Family</a></li>
+		<li><a href="gallery.html" target="blank">Gallery</a></li>
+	</ul> <br>
+
+	<center><audio controls autoplay>
+		<source src="audio/Fairy Tale.mp3" type="audio/mp3">
+	</audio></center> 
+	<br>
+
+	<div class="container">
+	  <img src="pictures/sem1_group_presentation.jpg" alt="Images" class="image">
+	  <div class="overlay">Online class during semester 1</div>
+	</div> <br>
+
+	<div class="container">
+	  <img src="pictures/cp_classmates.jpg" alt="Images" class="image">
+	  <div class="overlay">IMD 314 Final Project at SK Hamzah 1</div>
+	</div> <br>
+
+	<div class="container">
+	  <img src="pictures/aaf.jpg" alt="Images" class="image">
+	  <div class="overlay">Anugerah Akademik 2023</div>
+	</div> <br>
+
+	<center>
+	<footer>
+		<p style="background-color: #bb33ff; color: black; font-family: Times New Roman; font-size: 30px; height: 500px ihsb8"> &copy; <em id="date"></em>NADIA QISTINA. COPYRIGHT</p>
+	</footer>
+	</center>
+
+	</center>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage: Nadia's website </title>
+	<link rel="stylesheet" href="css/styleone.css">
+	<link rel="stylesheet" href="css/styleone.css">
+	<link rel="stylesheet" href="css/stylethree.css">
+	
+	<style>
+
+		ul  
+		{
+			list-style-type: none;
+			margin-left: auto;
+			margin-right: auto;
+			overflow: hidden;
+			padding: 30px, 30px;
+			height: 5%;
+			width: 90%;
+			text-align: center;
+			font-family: Tahoma;
+			background-color: purple;
+		}
+
+		li a 
+		{
+			float: left;
+			display: ruby-base-container;
+			padding: 30px;
+			text-decoration: none;
+			color: ivory;
+			text-align: center;
+		}
+
+		li a:hover
+		{
+			background-color: paleturquoise;
+		}
+
+		* {box-sizing: border-box}
+
+		body
+		{
+			background-image: url(pictures/background_home.png);
+		}
+		
+		.mySlides {display: none}
+	
+		img {vertical-align: middle;}
+
+		.slideshow-container 
+		{
+  			max-width: 1000px;
+  			position: relative;
+ 			margin: auto;
+		}
+
+		
+		.text 
+		{
+		    color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+		}
+
+
+		.numbertext
+		{
+    		color: #f2f2f2;
+   			font-size: 12px;
+    		padding: 8px 12px;
+    		position: absolute;
+    		top: 0;
+		}
+
+
+		.dot
+		{
+		    height: 15px;
+		    width: 15px;
+		    margin: 0 2px;
+		    background-color: slateblue;
+		    border-radius: 50%;
+		    display: inline-block;
+		    transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover 
+		{
+		  background-color: lightgray;
+		}
+
+		.fade
+		{
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@keyframes fade
+		{
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+
+		@media only screen and (max-width: 300px) 
+		{
+		  .prev, .next,.text {font-size: 11px}
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<br>
+
+	<center>
+		<h1>Home</h1>
+	</center>
+
+	<br>
+	
+	<center>
+   		<b><div id="clock">5:28:20</div></b>
+	</center>
+  
+    <script> 
+        setInterval(showTime, 1000); 
+        function showTime()
+        	{ 
+	            let time = new Date(); 
+	            let hour = time.getHours(); 
+	            let min = time.getMinutes(); 
+	            let sec = time.getSeconds(); 
+	            am_pm = "AM"; 
+	  
+	            if (hour > 12) { 
+	                hour -= 12; 
+	                am_pm = "PM"; 
+	            } 
+	            if (hour == 0) { 
+	                hr = 12; 
+	                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+    </script>
+
+	<ul>
+		<li><a href="index.html" target="blank">Home</a></li>
+		<li><a href="biodata.html" target="blank">About Me</a></li>
+		<li><a href="experiences.html" target="blank">Experiences</a></li>
+		<li><a href="education.html" target="blank">Education</a></li>
+		<li><a href="family.html" target="blank">Family</a></li>
+		<li><a href="gallery.html" target="blank">Gallery</a></li>
+	</ul>
+	<br>
+
+	<center>
+	<h2>HELLO, I'M NADIA</h2> <br>
+
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 4</div>
+	  <img src="pictures/nadia_plogging.jpg" style="width:80%">
+	  <div class="text">Color Plogging</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 4</div>
+	  <img src="pictures/nadia_cuti1.jpg" style="width:80%">
+	  <div class="text">Special Break (Holiday)</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 4</div>
+	  <img src="pictures/nadia_class.jpg" style="width:80%">
+	  <div class="text">Class</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 4</div>
+	  <img src="pictures/nadia.jpg" style="width:80%">
+	  <div class="text">Smile</div>
+	</div>
+
+	<br>
+
+	
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span> 
+	</div>
+
+	<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) 
+	{
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) 
+	{
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) 
+	{
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script> <br>
+
+	<center><audio controls autoplay>
+		<source src="audio/Baby Instrumental.mp3" type="audio/mp3">
+	</audio></center>
+
+	<h2>Welcome to my personal websites</h2>
+
+	<h3>A glimpse of me:</h3>
+
+	<p style="font-style: italic;">Hi, my name is Nadia and I'm 21 years old this year. Currently, I'm in my fifth semester (final sem) for my diploma in Information Management (IM 110) whereby after completing the past 4 semesters in online/ odl mode, I am finally here in Machang, Kelantan as we are able to have physical classes in the campus.</p>
+	</center>
+
+	<h2>Contacts</h2>
+
+		<address>
+			For further inquiries, feel free to reach me out through<a href="mailto:NadiaQistina35@gmail.com"> Nadia </a>or contact me at this number "0173755802".
+		</address> <br>
+
+		<center>
+		<a href="https://www.facebook.com/profile.php?id=100004154596811"><img src="icons and logo/facebook.png" alt="Facebook Icon" style="width: 100px; height: 100px;"></a>
+		<a href="https://www.instagram.com/qistina_nadia/"><img src="icons and logo/instagram.png" alt="Instagram Icon" style="width: 100px; height: 100px;"></a>
+		<a href="https://www.tiktok.com/@ndqstn_2?is_from_webapp=1&sender_device=pc"><img src="icons and logo/tiktok.png" alt="Tiktok Icon" style="width: 180px; height: 100px;"></a>
+		</center>
+
+	<center>
+	<footer>
+		<p style="background-color: #bb33ff; color: black; font-family: Times New Roman; font-size: 30px; height: 500px ihsb8"> &copy; <em id="date"></em>NADIA QISTINA. COPYRIGHT</p>
+	</footer>
+	</center>
+
+
+</body>
+</html>
